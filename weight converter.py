@@ -14,3 +14,5 @@ if unit in ("lbs", "lb", "pound", "pounds"):
 elif unit in ("kg", "kgs", "kilo", "kilograms"):
     weight = weight /2.2
     print(f"your weight is {weight} in kgs")
+else:
+    print("incorrect format, try again")
