@@ -8,23 +8,25 @@ print("3. Multiply   x")
 print("4. Divide     /")
 print("5. Square     s")
 
-choice = (input("please anter function: "))
+choice = (input("please enter function: "))
                 
 if choice == "+": 
     answer = num1 + num2
     print(f"answer is {answer}.")
-if choice == "-":
+elif choice == "-":
     answer = num1 - num2
     print(f"answer is {answer}.")
-if choice == "x":
+elif choice == "x":
     answer = num1 * num2
     print(f"the answer is {answer}.")
-if choice == "/":
+elif choice == "/":
     answer = num1 / num2
     print(f"the answer is {answer}.")
-if choice == "s":
+elif choice == "s":
     answer = num1 ** num2
     print(f"answer is {answer}.")
+else:
+  print("Error")
     
 
 
