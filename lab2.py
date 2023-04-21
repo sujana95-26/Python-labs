@@ -3,15 +3,17 @@
 import math
 
 
-person = 12
+person = int(input("Enter Age: ")
 
 if person >= 18:
     print("You are in category A")
-if person >= 16:
+if person >= 16 and person >18:
     print("You are in category B")
 if person <= 16:
     print("You are in category C")
-
+             
+person = int(input("Enter Age:"))
+             
 if person >= 18:
     print("You are in category A")
 elif person >= 16:
@@ -21,12 +23,13 @@ else:
 
 # Calculator on separate file
 
-# Task 2 - Calculate exama grades
+# Task 2 - Calculate exam grades
 # Exam grade
 
-exam_mark = float(input("Please enter the mark: "))
-
-if exam_mark <= 50.60:
+exam_mark = float(input("Please enter the mark (Between 1 and 100): "))
+if exam_mark < 1 or exam_mark > 100
+    print("Error: Please enter between 1 and 100")         
+elif exam_mark <= 50.60:
     print("fail")
 elif exam_mark <= 61.70:
     print("pass")
@@ -35,14 +38,18 @@ elif exam_mark <= 71.100:
 elif exam_mark <= 100:
     print("Distinction")
 else:
-    print("Error:marks must be between 1 and 100")
+    print("Distinction")
 
 # Task 3
 # Exam grade2
 
-level = float(input("please enter your level: "))
-marks = float(input("please enter your marks: "))
-if(level == 1):
+level = float(input("please enter your level(1 or 2): "))
+marks = float(input("please enter your marks(Between 1 and 100): "))
+
+if exam_mark < 1 or exam_mark > 100
+    print("Error: Please enter between 1 and 100")
+             
+elif(level == 1):
     if ( marks <= 50.60):
         print("fail")
     elif ( marks <= 61.70):
@@ -50,9 +57,9 @@ if(level == 1):
     elif ( marks >=71.100):
         print("Distinction")
     else:
-        print("Error:marks must be between 1 and 100")
+        print("Distinction")
 
-if (level == 2):
+elif (level == 2):
     if (marks < 40):
         print("fail")
     elif ( marks <= 40.50):
@@ -62,7 +69,9 @@ if (level == 2):
     elif ( marks >= 66.100):
         print("Distinction")
     else:
-        print("Error:marks must be between 1 and 100")
+        print("Distinction")
+else:
+    print("Error: choose level 1 or 2")
 
 # Task 4
 # Pythagoras
