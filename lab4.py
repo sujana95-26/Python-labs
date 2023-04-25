@@ -56,6 +56,8 @@ while True:
     choice = (input("Please choose an option(1-8): "))
 
     if choice == "1":
+        while True:
+                date_time1 = input("enter first time in format(DD:HH:MM)")
         value1 = (input("Please enter first value in DD.HH.MM"))
         value2 = (input("Please enter second value in DD.HH.MM"))
         result = value1 + value2
